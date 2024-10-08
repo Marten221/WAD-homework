@@ -1,0 +1,118 @@
+/* General Body Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 4vh;
+    background-color: slategray;
+    border: 30; 
+    border-radius: 4px;
+}
+
+header #nav > a:hover {
+    background-color: rgb(85, 95, 105);
+    border-radius: 2px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.user {
+    margin-right: 5px;
+}
+
+header #nav {
+    margin-left: 5px;
+}
+
+#nav a {
+    color: black;
+    font-size: 1.1rem;
+}
+
+/* Ensure the body takes up the full height of the screen */
+body, html {
+    height: 100%;
+    margin: 0; /* Changed to 0 for standard body margin */
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox on the main element to center the form */
+main {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Full viewport height */
+}
+
+/* Login Form Container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.form-wrapper {
+    background-color: rgb(170, 178, 187); /* Updated to specified color */
+    padding: 40px 20px; /* Added top/bottom and left/right padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.form-wrapper input {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-wrapper button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-wrapper button:hover {
+    background-color: #0f62c3;
+}
+
+.create-account, .forgot-password {
+    display: block;
+    color: #1a73e8;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.create-account:hover, .forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox layout to handle responsiveness */
+@media (max-width: 768px) {
+    #nav a {
+        font-size: 14px;
+    }
+
+    .login-container {
+        margin-top: 20px;
+    }
+
+    .form-wrapper {
+        width: 90%;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PostIt</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+    <!-- Updated Header -->
+    <header>
+        <div id="nav">
+            <a href="index.html">Home</a>
+            <a href="addPost.html">Add Post</a>
+        </div>
+        <a href="login.html">
+            <box-icon class="user" name='user'></box-icon>
+        </a>
+    </header>
+
+    <!-- Login Form Container inside a centered main area -->
+    <main>
+        <div class="login-container">
+            <div class="form-wrapper">
+                <h2>Welcome to PostIt</h2>
+                <a class="create-account">Create an account</a>
+                <p>or</p>
+                <p>Please log in</p>
+                <form id="loginForm" action="index.html" onsubmit="return validateForm()">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Log in</button>
+                </form>
+                <a class="forgot-password">Forget password</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === "" || password === "") {
+                alert("Both fields are required.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
