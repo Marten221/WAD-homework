@@ -1,0 +1,111 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 4vh;
+    background-color: slategray;
+    border: 3 0;
+    border-radius: 4px;
+   
+    #nav > a:hover{
+        background-color: rgb(85, 95, 105);
+        border-radius: 2px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .user{
+        margin-right: 5px;
+    }
+
+}
+
+header #nav{
+    margin-left: 5px;
+}
+
+#nav a + a, #nav a{
+    color: black;
+    font-size: 1.1rem;
+}
+
+
+/* Ensure the body takes up the full height of the screen */
+body, html {
+    height: 100%;
+    margin: 1;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox on the main element to center the form */
+main {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Make sure it takes full viewport height */
+}
+
+/* Form container styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(170, 178, 187);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;  /* Adjust width as needed */
+}
+
+/* Form field styles */
+.form-container form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-container form input, 
+.form-container form textarea {
+    resize: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Flexbox to place label and file input side by side */
+.file-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.file-input-container label {
+    margin-right: 10px; /* Space between label and button */
+}
+
+.file-input-container input[type="file"] {
+    flex-grow: 1;
+}
+
+/* Centering the Create Post button */
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
