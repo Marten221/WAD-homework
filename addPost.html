@@ -7,7 +7,7 @@
     <title>Add Post</title>
     <link rel="stylesheet" href="addPost.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    
+
 </head>
 
 <body>
@@ -15,15 +15,17 @@
         <div id="nav">
             <a href="index.html">Home</a></li>
         </div>
-            <box-icon class="user" name='user'></box-icon>
+        <box-icon class="user" name='user'></box-icon>
     </header>
 
     <main>
         <div class="form-container">
             <form action="index.html">
 
-                <label for="content">Post body:</label>
-                <textarea id="content" name="body" rows="10" required></textarea>
+                <div class="file-input-container">
+                    <label for="content">Post body:</label>
+                    <textarea id="content" name="body" rows="10" required></textarea>
+                </div>
 
                 <div class="file-input-container">
                     <label for="image">Select file:</label>
@@ -33,7 +35,7 @@
                 <div class="button-container">
                     <button type="submit">Create post</button>
                 </div>
-                
+
             </form>
         </div>
     </main>
