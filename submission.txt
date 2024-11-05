@@ -19,3 +19,4 @@ https://api.jsonbin.io/v3/b/672a13b5acd3cb34a8a30b06
 10. Deploy your project as a GitHub page site (https://docs.github.com/en/pages/gettingstarted-with-github-pages/creating-a-github-pages-site) (1 point)
 
 posts.json failis on näidis 
+panna pilte juurde

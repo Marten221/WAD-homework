@@ -39,12 +39,12 @@
     <script src="js/global.js"></script>
     <script>
         async function fetchPosts() {
-            const url = 'https://api.jsonbin.io/v3/b/672a13b5acd3cb34a8a30b06'; // Replace this with the actual JSONBin API endpoint
+            const url = 'https://api.jsonbin.io/v3/b/672a13b5acd3cb34a8a30b06'; 
 
             try {
                 const response = await fetch(url, {
                     headers: {
-                        'X-Master-Key': '$2a$10$SwH76GRGwQMP5Y4Y.cOZGePokSLbvaFEKD1wr2lwMPF9YGBBhm1.K' // Replace <YOUR_API_KEY> with your actual JSONBin API key if needed
+                        'X-Master-Key': '$2a$10$SwH76GRGwQMP5Y4Y.cOZGePokSLbvaFEKD1wr2lwMPF9YGBBhm1.K' 
                     }
                 });
 
@@ -96,11 +96,9 @@
                     card.appendChild(img);
                 }
 
-                // Content text
                 const content = document.createElement('p');
                 content.textContent = post.content;
 
-                // Like icon
                 const likeIcon = document.createElement('box-icon');
                 likeIcon.setAttribute('name', 'like');
 
@@ -109,8 +107,6 @@
                 contentDiv.appendChild(card);
             });
         }
-
-        // Fetch and display posts on page load
         fetchPosts();
     </script>
 </body>
