@@ -1,6 +1,6 @@
 Group BD / practice session 7 - Marten Ojasaar, Robin Henrik Neem, Markus Nurmik
 Repository: https://github.com/Marten221/WAD-homework1
-Deployed project: https://marten221.github.io/WAD-homework1/
+Deployed project: https://marten221.github.io/WAD-homework/
 
 WAD-HM2
 
