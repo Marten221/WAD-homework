@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Post</title>
-    <link rel="stylesheet" href="addPost.css">
+    <link rel="stylesheet" href="css\addPost.css">
+    <link rel="stylesheet" href="css\global.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </head>
@@ -14,10 +15,18 @@
     <header>
         <div id="nav">
             <a href="index.html">Home</a></li>
+            |
+            <a href="login.html">Login</a>
         </div>
-        <a href="login.html">
-            <box-icon class="user" name='user'></box-icon>
-        </a>
+        <div class="user-menu">
+            <box-icon class="user" name='user' onclick="toggleDropdown()"></box-icon>
+            <!-- Dropdown menu, hidden initially -->
+            <div id="dropdown-menu" class="dropdown-content">
+                <p>Username: Mattias Naan</p>
+                <p>Email: Mati@hotmail.com</p>
+                <p>Logout</p>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -44,6 +53,9 @@
 
     <footer>
     </footer>
+
+    <script src="js\global.js"></script>
+
 </body>
 
 </html>
