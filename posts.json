@@ -2,71 +2,71 @@
     {
         "id": 1,
         "author": "Mattias Naan",
-        "createTime": "2024-10-22T10:00:00Z",
+        "createTime": "2024-10-22",
         "content": "Tartu 2022 on muljejääv!",
-        "image": "https://example.com/images/IMG_9070.jpg"
+        "image": "images/IMG_9070.jpg"
     },
     {
         "id": 2,
         "author": "Anna Peet",
-        "createTime": "2024-10-20T14:30:00Z",
+        "createTime": "2024-10-20",
         "content": "Kas keegi teab, mis toas labor täna on?",
-        "image": ""
+        "image": "images/image0.jpeg"
     },
     {
         "id": 3,
         "author": "Marten Rääk",
-        "createTime": "2024-09-29T09:15:00Z",
+        "createTime": "2024-09-29",
         "content": "Keegi linnas?????? 😸😸😼",
-        "image": "https://example.com/images/image0.jpeg"
+        "image": "images/image0.jpeg"
     },
     {
         "id": 4,
         "author": "Evelin Karp",
-        "createTime": "2024-09-20T11:45:00Z",
+        "createTime": "2024-09-20",
         "content": "Just ärkasin! 😴💤😫",
-        "image": "https://example.com/images/rat-shower.gif"
+        "image": "images/rat-shower.gif"
     },
     {
         "id": 5,
         "author": "Jüri Joonas",
-        "createTime": "2024-09-18T08:00:00Z",
+        "createTime": "2024-09-18",
         "content": "Yoooo!",
         "image": ""
     },
     {
         "id": 6,
         "author": "Kati Laas",
-        "createTime": "2024-09-15T16:00:00Z",
+        "createTime": "2024-09-15",
         "content": "Päev oli väsitav, aga tore!",
-        "image": "https://example.com/images/tore_päev.jpg"
+        "image": ""
     },
     {
         "id": 7,
         "author": "Rasmus Rähni",
-        "createTime": "2024-09-12T12:30:00Z",
+        "createTime": "2024-09-12",
         "content": "Kus on parim koht, kus süüa Tartu kesklinnas?",
         "image": ""
     },
     {
         "id": 8,
         "author": "Liisi Loodus",
-        "createTime": "2024-09-10T19:00:00Z",
+        "createTime": "2024-09-10",
         "content": "Loodus on imeline! 🌳",
-        "image": "https://example.com/images/loodus.jpg"
+        "image": ""
     },
     {
         "id": 9,
         "author": "Toomas Täht",
-        "createTime": "2024-09-05T15:00:00Z",
+        "createTime": "2024-09-05",
         "content": "Film, mida soovitan vaadata: 'Tõde ja õigus'.",
         "image": ""
     },
     {
         "id": 10,
         "author": "Evelyn Ees",
-        "createTime": "2024-08-30T20:00:00Z",
+        "createTime": "2024-08-30",
         "content": "Suvi on läbi, aga mäletan häid aegu!",
-        "image": "https://example.com/images/suvi_2024.jpg"
+        "image": ""
     }
 ]

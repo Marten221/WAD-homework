@@ -83,5 +83,25 @@ footer{
     border-radius: 4px;
 }
 
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vh;
+    padding: 0 5px;
+}
 
+.meta .left {
+    display: flex;
+    align-items: center;
+}
+
+.meta .left box-icon {
+    margin-right: 5px; /* Space between the icon and username */
+}
+
+.meta .right {
+    font-size: 0.9rem; /* Adjust font size if needed */
+    color: #666; /* Optional: color for the date */
+}
 

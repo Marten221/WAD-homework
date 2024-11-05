@@ -1,3 +1,21 @@
 Group BD / practice session 7 - Marten Ojasaar, Robin Henrik Neem, Markus Nurmik
 Repository: https://github.com/Marten221/WAD-homework1
 Deployed project: https://marten221.github.io/WAD-homework1/
+
+WAD-HM2
+
+Tasks
+1. done
+2. jsonlint.com - yes is valid
+3. We used jsonbin.io
+https://api.jsonbin.io/v3/b/672a13b5acd3cb34a8a30b06
+4. done
+5. done
+6. done
+7. done
+8. The overall styling of the page (1 point) done 
+9. Do not forget to push all your changes to your repository. done 
+• At least one “commit” from every team member.
+10. Deploy your project as a GitHub page site (https://docs.github.com/en/pages/gettingstarted-with-github-pages/creating-a-github-pages-site) (1 point)
+
+posts.json failis on näidis 

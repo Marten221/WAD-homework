@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +23,6 @@
         
         <div class="user-menu">
             <box-icon class="user" name='user' onclick="toggleDropdown()"></box-icon>
-            <!-- Dropdown menu, hidden initially -->
             <div id="dropdown-menu" class="dropdown-content">
                 <p>Username: Mattias Naan</p>
                 <p>Email: Mati@hotmail.com</p>
@@ -31,8 +31,7 @@
         </div>
     </header>
 
-    <br>
-
+    <br>    
     <div id="wrapper">
         <section class="section" id="left-section"></section>
 
@@ -107,5 +106,123 @@
     <script src="js\global.js"></script>
 
 </body>
+</html> 
+-->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <a href="index.html" class="home">Home</a> |
+            <a href="addPost.html">Add Post</a> |
+            <a href="login.html">Login</a>
+        </div>
+        <div class="user-menu">
+            <box-icon name='user' onclick="toggleDropdown()"></box-icon>
+            <div id="dropdown-menu" class="dropdown-content">
+                <p>Username: Mattias Naan</p>
+                <p>Email: Mati@hotmail.com</p>
+                <p>Logout</p>
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <div id="wrapper">
+        <section class="section" id="left-section"></section>
+        <div id="content"></div>
+        <section class="section" id="right-section"></section>
+    </div>
+    <br>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script>
+        async function fetchPosts() {
+            const url = 'https://api.jsonbin.io/v3/b/672a13b5acd3cb34a8a30b06'; // Replace this with the actual JSONBin API endpoint
+
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        'X-Master-Key': '$2a$10$SwH76GRGwQMP5Y4Y.cOZGePokSLbvaFEKD1wr2lwMPF9YGBBhm1.K' // Replace <YOUR_API_KEY> with your actual JSONBin API key if needed
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+                const posts = data.record; // Access the actual data array
+                displayPosts(posts);
+            } catch (error) {
+                console.error('Fetch error:', error);
+            }
+        }
+
+        function displayPosts(posts) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = ''; // Clear existing content
+
+            posts.forEach(post => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+
+                // Meta section (author and date)
+                const meta = document.createElement('div');
+                meta.classList.add('meta');
+
+                const left = document.createElement('div');
+                left.classList.add('left');
+                const userIcon = document.createElement('box-icon');
+                userIcon.setAttribute('name', 'user');
+                const author = document.createElement('p');
+                author.textContent = post.author;
+                left.append(userIcon, author);
+
+                const right = document.createElement('div');
+                right.classList.add('right');
+                const date = document.createElement('p');
+                date.textContent = post.createTime;
+                right.appendChild(date);
+
+                meta.append(left, right);
+
+                // Image (if exists)
+                if (post.image) {
+                    const img = document.createElement('img');
+                    img.src = post.image;
+                    img.alt = post.content || 'Post image';
+                    card.appendChild(img);
+                }
+
+                // Content text
+                const content = document.createElement('p');
+                content.textContent = post.content;
+
+                // Like icon
+                const likeIcon = document.createElement('box-icon');
+                likeIcon.setAttribute('name', 'like');
+
+                // Append all elements to the card
+                card.append(meta, content, likeIcon);
+                contentDiv.appendChild(card);
+            });
+        }
+
+        // Fetch and display posts on page load
+        fetchPosts();
+    </script>
+</body>
 </html>
