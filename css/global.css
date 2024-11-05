@@ -1,3 +1,68 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 4vh;
+    background-color: slategray;
+    border: 3 0;
+    border-radius: 4px;
+   
+    #nav > a:hover{
+        background-color: rgb(85, 95, 105);
+        border-radius: 2px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .user{
+        margin-right: 5px;
+    }
+
+}
+
+header #nav > a:hover {
+    background-color: rgb(85, 95, 105);
+    border-radius: 2px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.user {
+    margin-right: 5px;
+}
+
+header #nav {
+    margin-left: 5px;
+}
+
+#nav a + a, #nav a{
+    color: black;
+    font-size: 1.1rem;
+}
+
+
+
+body, html {
+    height: 100%;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Full viewport height */
+}
+
+
 /* Dropdown container */
 .user-menu {
     position: relative;
